@@ -6,7 +6,7 @@ const { generateLoanSchedule, getLoanScheduleById, getAllLoans, updatePayment } 
 
 const app = express();
 app.use(cors({
-    origin: "https://assigment23febclient-git-main-99attendance.vercel.app/",
+    origin: "https://assigment23febclient-git-main-99attendance.vercel.app",
     credentials: true,
 }));
 app.use(express.json());
