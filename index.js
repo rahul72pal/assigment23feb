@@ -5,7 +5,10 @@ const mongoose = require("mongoose");
 const { generateLoanSchedule, getLoanScheduleById, getAllLoans, updatePayment } = require("./controller/Loanschedule");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://assigment23febclient-git-main-99attendance.vercel.app/",
+    credentials: true,
+}));
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
